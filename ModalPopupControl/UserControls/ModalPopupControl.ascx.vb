@@ -31,29 +31,6 @@ Public Class ModalPopupControl
         End Set
     End Property
 
-    Private _backgroundCssClass As String
-    Public Property BackgroundCssClass() As String
-        Get
-            Return _backgroundCssClass
-        End Get
-        Set(ByVal value As String)
-            _backgroundCssClass = value
-            mpext.BackgroundCssClass = _backgroundCssClass
-        End Set
-    End Property
-
-    Private _cssClass As String
-    Public Property CssClass() As String
-        Get
-            Return _cssClass
-        End Get
-        Set(ByVal value As String)
-            _cssClass = value
-            pnlPopup.CssClass = _cssClass
-        End Set
-    End Property
-
-
 #End Region
 
 #Region "Methods"
@@ -96,24 +73,7 @@ Public Class ModalPopupControl
 
 
     ''' <summary>
-    ''' 
-    ''' </summary>
-    ''' <param name="Mensaje"></param>
-    ''' <param name="Title"></param>
-    ''' <remarks></remarks>
-    Public Sub ShowM(ByVal Mensaje As String, ByVal Title As String)
-
-        ModalPopupControl_lblMessage.Text = Mensaje
-        ModalPopupControl_lblTitle.Text = Title
-
-        Me.ModalPopupControl_btnCancel.Style.Add("display", "none")
-        pnlPopup.Width = _width
-        mpext.Show()
-    End Sub
-
-
-    ''' <summary>
-    ''' 
+    ''' Show the message as a list and the title
     ''' </summary>
     ''' <param name="Mensaje"></param>
     ''' <remarks></remarks>
@@ -133,7 +93,7 @@ Public Class ModalPopupControl
     End Sub
 
     ''' <summary>
-    ''' 
+    ''' Show the message, title and set the buttons to be shown
     ''' </summary>
     ''' <param name="Mensaje"></param>
     ''' <param name="Title"></param>
@@ -154,7 +114,7 @@ Public Class ModalPopupControl
     End Sub
 
     ''' <summary>
-    ''' 
+    ''' Show the message as a list of string, the title and set the buttons to be displayed.
     ''' </summary>
     ''' <param name="Mensaje"></param>
     ''' <param name="Title"></param>
@@ -183,7 +143,7 @@ Public Class ModalPopupControl
 
 
     ''' <summary>
-    ''' 
+    ''' Additional to other overloaded methods described above, set also the PostBackOption.
     ''' </summary>
     ''' <param name="Mensaje"></param>
     ''' <param name="Title"></param>
@@ -207,7 +167,7 @@ Public Class ModalPopupControl
     End Sub
 
     ''' <summary>
-    ''' 
+    ''' Same as above, with the option to set the message as a list.
     ''' </summary>
     ''' <param name="Mensaje"></param>
     ''' <param name="Title"></param>
