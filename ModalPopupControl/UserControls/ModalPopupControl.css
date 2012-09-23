@@ -1,0 +1,35 @@
+﻿.ModalPopupControl_wrap
+{
+    background-color: #FFF;
+    padding:5px;
+}
+
+.ModalPopupControl_title
+{
+    background: url(../images/modalpopupbg.jpg) repeat-x;
+    height: 44px;
+    font-weight:bold;
+    color: #435D79;
+    border-bottom: 1px solid #BAD1E7;
+    font-size:16px;
+}
+.ModalPopupControl_message
+{
+    background-color:#F8FCFF;
+    padding: 10px;
+    border-bottom: 1px solid #BAD1E7;
+    font-weight:bold;
+    color:#4B86B1;
+   
+}
+.ModalPopupControl_buttons
+{
+    background-color:#F0F0F0;
+ 
+}
+
+.modalBackground { 
+     background-color:#999999; 
+     filter:alpha(opacity=50); 
+     opacity:0.5; 
+ }
